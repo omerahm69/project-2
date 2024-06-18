@@ -1,6 +1,6 @@
-let userChoice=document.getElementByIdID('user-choice');
-let computerChoice=document.getElementByIdID('computer-choice');
-let score=document.getElementByIdID('score');
+let userChoice=document.getElementById('user-choice');
+let computerChoice=document.getElementById('computer-choice');
+let score=document.getElementById('score');
 
 
-console.log(userChoice);
+console.log('userChoice');

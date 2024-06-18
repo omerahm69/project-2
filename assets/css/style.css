@@ -8,8 +8,8 @@
 
 .headings{
     display:inline-block;
-    flex-direction:
-    column;
+    flex-direction:column;
+    margin:0 5px;
 }
 
 
