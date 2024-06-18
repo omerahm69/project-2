@@ -7,8 +7,9 @@
 }
 
 .headings{
-    display:flex;
-    flex-direction: ;
+    display:inline-block;
+    flex-direction:
+    column;
 }
 
 
