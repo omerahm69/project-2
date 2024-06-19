@@ -1,25 +1,33 @@
-const userChoice=document.getElementById('user-choice');
-const computerChoice=document.getElementById('computer-choice');
+const rock=document.getElementById('rock');
+const paper=document.getElementById('paper');
+const scissor=document.getElementById('scissor');
+const lizard=document.getElementById('lizard');
+const spock=document.getElementById('spock');
+
+const userChoices=[rock,paper,scissor,lizard,spock];
+const computerChoices=['rock','paper','scissor','lizard','spock'];
+
+
 const score=document.getElementById('score');
 const choices=document.querySelectorAll('.rpsls-main');
 
 let  userChoice=0;
 let computerChoice=0;
 
-choices.addEventListener('click',()=>playGame(choices));
+userChoices.addEventListener('click',()=>playGame(choices));
 
 
 function playGame(userChoice){
-    const choices=['rock','paper','scissors','lizard','spock'];
-    const computerChoice=choices[Math.floor(Math.random()* choices.length)];
+    const userChoices=['rock','paper','scissors','lizard','spock'];
+    const computerChoices=choices[Math.floor(Math.random()* computerChoices.length)];
     if (userChoice===computerChoice){
         score.textContent='its a draw';
-        else if(userChoice=='rock'){
+        else if(userChoices=='rock'){
             if(computerChoice=='paper'){
                 score.textContent='Computer Won';
                 computerChoice++;computerChoice;
             }else {
-                score.textContent=='User Won'
+                score.textContent=='User Won';
                 userChoice++;
                 userChoice++;userChoice;
                 
@@ -30,7 +38,7 @@ function playGame(userChoice){
                 score.textContent='Computer Won';
                 computerChoice++;computerChoice;
             }else{
-                score.textContent=='User Won'
+                score.textContent=='User Won';
                 userChoice++;
                 userChoice++;userChoice;
 
@@ -41,7 +49,7 @@ function playGame(userChoice){
                 score.textContent='Computer Won';
                 computerChoice++;computerChoice;
             }else{
-                score.textContent=='User Won'
+                score.textContent=='User Won';
                 userChoice++;
                 userChoice++;userChoice;
             }
@@ -51,10 +59,11 @@ function playGame(userChoice){
         score.textContent='Computer Won';
         computerChoice++;computerChoice;
             }else{
-                score.textContent=='User Won'
+                score.textContent=='User Won';
                 userChoice++;
                 userChoice++;userChoice;
     }
 }
 }
 }
+
