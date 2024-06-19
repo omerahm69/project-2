@@ -4,7 +4,7 @@ const scissor=document.getElementById('scissor');
 const lizard=document.getElementById('lizard');
 const spock=document.getElementById('spock');
 
-const userChoices=[rock,paper,scissor,lizard,spock];
+const userChoices=[rock, paper, scissor, lizard, spock];
 const computerChoices=['rock','paper','scissor','lizard','spock'];
 
 
