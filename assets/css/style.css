@@ -1,3 +1,8 @@
+body{
+    min-height: fit-content; 
+}
+
+
 .main{
     justify-content: center;
     background-color: aqua;
@@ -7,9 +12,25 @@
 }
 
 .headings{
-    display:inline-block;
-    flex-direction:column;
-    margin:0 5px;
+    display:flex;
+    flex-direction: column;
+    margin:0px 5px;
+}
+
+#score{
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: bold;
+
+}
+.rpsls-main button {
+    min-width: 100px;
+    margin:0 10px;
+    background-color: rgb(193, 228, 228);
+    cursor: pointer;
+    font-size: large;
+    margin-top: 10px;
+
 }
 
 
