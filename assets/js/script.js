@@ -9,61 +9,72 @@ const computerChoices=['rock','paper','scissor','lizard','spock'];
 
 
 const score=document.getElementById('score');
-const choices=document.querySelectorAll('.rpsls-main');
 
-let  userChoice=0;
-let computerChoice=0;
 
-userChoices.addEventListener('click',()=>playGame(choices));
+let  userScore=0;
+let computerScore=0;
+
+userChoices.forEach((choice,index) => {
+    choice.addEventListener('click', () => playGame(computerChoices[index]));
+
+});
 
 
 function playGame(userChoice){
-    const userChoices=['rock','paper','scissors','lizard','spock'];
-    const computerChoices=choices[Math.floor(Math.random()* computerChoices.length)];
+    const random=Math.floor(Math.random()*computerChoices.length);
+    const computerChoice= computerChoices[random];
     if (userChoice===computerChoice){
         score.textContent='its a draw';
-        else if(userChoices=='rock'){
-            if(computerChoice=='paper'){
+    }
+        else if(userChoice==='rock'){
+            if(computerChoice==='paper'){
                 score.textContent='Computer Won';
                 computerChoice++;computerChoice;
             }else {
-                score.textContent=='User Won';
-                userChoice++;
+                score.textContent='User Won';
+                userScore++;
                 userChoice++;userChoice;
                 
             }
         }
-        else if(userChoice=='paper'){
-            if (computerChoice=='scissors'){
+        else if(userChoice==='paper'){
+            if (computerChoice==='scissors'){
                 score.textContent='Computer Won';
-                computerChoice++;computerChoice;
+                
             }else{
-                score.textContent=='User Won';
-                userChoice++;
+                score.textContent='User Won';
+                userScore++;
                 userChoice++;userChoice;
 
             }
         }
-        else if(userChoice=='scissors'){
-            if (computerChoice=='lizard'){
+        else if(userChoice==='scissors'){
+            if (computerChoice==='lizard'){
                 score.textContent='Computer Won';
-                computerChoice++;computerChoice;
+               
             }else{
-                score.textContent=='User Won';
-                userChoice++;
+                score.textContent='User Won';
+                userScore++;
                 userChoice++;userChoice;
             }
 }
-        else if(userChoice=='lizard'){
-            if (computerChoice=='spock'){
+        else if(userChoice==='lizard'){
+            if (computerChoice==='spock'){
         score.textContent='Computer Won';
-        computerChoice++;computerChoice;
+        
             }else{
-                score.textContent=='User Won';
-                userChoice++;
+                score.textContent='User Won';
+                userScore++;
                 userChoice++;userChoice;
     }
-}
-}
+
+    
 }
 
+}
+
+updateScore();
+
+function updateScore(){
+    score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
+}
