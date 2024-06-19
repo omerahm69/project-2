@@ -15,14 +15,16 @@ body{
 
 .headings{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     margin:0px 5px;
+    margin-bottom: 10px;
 }
 
 #score{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: larger;
     font-weight: bold;
+    margin-bottom: 10px;
 
 }
 .rpsls-main button {
@@ -31,7 +33,7 @@ body{
     background-color: rgb(193, 228, 228);
     cursor: pointer;
     font-size: large;
-    margin-top: 10px;
+    margin-top: 15px;
 
 }
 
