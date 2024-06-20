@@ -75,6 +75,7 @@ function playGame(userChoice){
                 }
             }
 
+
             updateScore();
     }
         function updateScore() {
