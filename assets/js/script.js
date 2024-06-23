@@ -3,11 +3,11 @@ const paper=document.getElementById('paper');
 const scissors=document.getElementById('scissors');
 const lizard=document.getElementById('lizard');
 const spock=document.getElementById('spock');
-const user=document.getElementById('user-choiceDisplay');
-const computer=document.getElementById('computer-choiceDisplay');
 
 const userChoices=[rock, paper, scissors, lizard, spock];
 const computerChoices=['rock','paper','scissors','lizard','spock'];
+
+
 
 const score=document.getElementById('score');
 
@@ -15,16 +15,18 @@ let  userScore=0;
 let computerScore=0;
 
 
-userChoices.forEach((choice, index) => {
-    choice.addEventListener('click', () => playGame(computerChoices[index]));
+userChoices.forEach((button) => {
+    button.addEventListener('click', () => playGame(choice.id));
 });
 
-
-
+console.log(userChoices);
 
 function playGame(userChoice){
     const random=Math.floor(Math.random() * computerChoices.length);
     const computerChoice= computerChoices[random];
+
+    console.log(userChoices);
+    console.log(computerChoice);
 
     if (userChoice===computerChoice){
         score.textContent='its a draw';
@@ -73,11 +75,15 @@ function playGame(userChoice){
                 score.textContent='User Won';
                 userScore++;
                 }
+            
             }
+            playGame();
+            
+            userChoiceDisplay.textContent="You chose: " + userChoice;
+            computerChoice.textContent="Computer chose: " + computerChoice;
 
-
-            updateScore();
     }
         function updateScore() {
             score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
-}
+} 
+            updateScore();
