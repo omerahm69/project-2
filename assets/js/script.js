@@ -7,8 +7,7 @@ const spock=document.getElementById('spock');
 const userChoices=document.querySelectorAll('button');
 for (i of userChoices){
     i.addEventListener('click', function() {
-        console.log('userChoices');
-        
+        console.log(this);
     })
 }
 
@@ -78,6 +77,7 @@ function playGame( userChoices){
             
             userChoiceDisplay.textContent="You chose: " + userChoices;
             computerChoice.textContent="Computer chose: " + computerChoice;
+
     }
         function updateScore() {
             score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
