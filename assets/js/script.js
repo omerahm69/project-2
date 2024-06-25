@@ -4,31 +4,38 @@ const scissors=document.getElementById('scissors');
 const lizard=document.getElementById('lizard');
 const spock=document.getElementById('spock');
 
-const userChoices=document.querySelectorAll('button');
-for (i of userChoices){
-    i.addEventListener('click', function() {
-        console.log(this);
-    })
-}
+
+const userChoices = document.querySelectorAll('button');
+const userChoiceDisplay = document.getElementById('user-Choices');
+const computerChoiceDisplay = document.getElementById('computer-Choices');
+
+var score="" ;
+
+let userScore = 0;
+let computerScore = 0;
+
 
 const computerChoices=['rock','paper','scissors','lizard','spock'];
 
-const score=document.getElementById('score');
+for (let button of userChoices) {
+    button.addEventListener('click', function() {
+        const userChoice = this.getAttribute('aria-label');
+        userChoiceDisplay.textContent = "User: " + userChoice;
+        playGame(userChoice);
+    });
+}
 
-let  userScore=0;
-let computerScore=0;
-
-function playGame( userChoices){
+function playGame( userChoice){
     const random=Math.floor(Math.random() * computerChoices.length);
     const computerChoice= computerChoices[random];
 
-    console.log(userChoices);
-    console.log(computerChoice);
+    computerChoiceDisplay.textContent = "Computer: " + computerChoice;
 
-    if (userChoices===computerChoice){
+
+    if (userChoice===computerChoice){
         score.textContent='its a draw';
         }
-        else if(userChoices ==='rock'){
+        else if(userChoice ==='rock'){
             if(computerChoice ==='paper' || computerChoice ==='spock' ){
                 score.textContent='Computer Won';
                 computerScore++;
@@ -55,7 +62,7 @@ function playGame( userChoices){
                 userScore++;
             }
         }
-        else if(userChoices ==='lizard'){
+        else if(userChoice ==='lizard'){
             if (computerChoice ==='rock' || computerChoice ==='scissors'){
         score.textContent='Computer Won';
         computerScore++;
@@ -64,22 +71,24 @@ function playGame( userChoices){
                 userScore++;
                 }
         }
-        else if(userChoices ==='spock'){
+        else if(userChoice ==='spock'){
             if (computerChoice ==='paper' || computerChoice ==='lizard'){
         score.textContent='Computer Won';
         computerScore++;
+
+        console.log(computerScore);
             }else{
                 score.textContent='User Won';
                 userScore++;
                 }
             }
-            playGame();
-            
-            userChoiceDisplay.textContent="You chose: " + userChoices;
-            computerChoice.textContent="Computer chose: " + computerChoice;
-
-    }
+        
+            document.getElementById("score").innerHTML=userScore + computerChoice;
+}       updateScore();
+            "fix"
         function updateScore() {
             score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
+
+            
 }
-            updateScore();
+                
