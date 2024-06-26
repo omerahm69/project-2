@@ -11,9 +11,8 @@ const computerChoiceDisplay = document.getElementById('computer-Choices');
 
 var score="" ;
 
-let userScore = 0;
-let computerScore = 0;
-
+let userScore = parseInt(localStorage.getItem('userScore')) || 0;
+let computerScore = parseInt(localStorage.getItem('computerScore')) || 0;
 
 const computerChoices=['rock','paper','scissors','lizard','spock'];
 
@@ -83,9 +82,9 @@ function playGame( userChoice){
                 }
             }
         
-            document.getElementById("score").innerHTML=userScore + computerChoice;
+            document.getElementById("score").innerHTML= userScore + "  "  + computerChoice;
 }       updateScore();
-            "fix"
+            
         function updateScore() {
             score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
 
