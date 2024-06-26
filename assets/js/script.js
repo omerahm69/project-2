@@ -14,6 +14,8 @@ var score="" ;
 let userScore = parseInt(localStorage.getItem('userScore')) || 0;
 let computerScore = parseInt(localStorage.getItem('computerScore')) || 0;
 
+console.log(userScore);
+
 const computerChoices=['rock','paper','scissors','lizard','spock'];
 
 for (let button of userChoices) {
@@ -30,6 +32,8 @@ function playGame( userChoice){
 
     computerChoiceDisplay.textContent = "Computer: " + computerChoice;
 
+
+console.log(userChoiceDisplay);
 
     if (userChoice===computerChoice){
         score.textContent='its a draw';
@@ -75,7 +79,6 @@ function playGame( userChoice){
         score.textContent='Computer Won';
         computerScore++;
 
-        console.log(computerScore);
             }else{
                 score.textContent='User Won';
                 userScore++;
@@ -83,11 +86,21 @@ function playGame( userChoice){
             }
         
             document.getElementById("score").innerHTML= userScore + "  "  + computerChoice;
-}       updateScore();
-            
+
+}
+        
+        
+        localStorage.getItem('userScore', userScore);
+        localStorage.setItem('computerScore', computerScore);
+        localStorage.setItem('score.textContent');
+        
+        updateScore();
+
         function updateScore() {
             score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
 
-            
+        
 }
+
+
                 
