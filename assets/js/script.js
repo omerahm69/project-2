@@ -24,6 +24,7 @@ for (let button of userChoices) {
         userChoiceDisplay.textContent = "User: " + userChoice;
         playGame(userChoice);
     });
+    
 }
 
 function playGame( userChoice){
@@ -37,13 +38,14 @@ console.log(userChoiceDisplay);
 
     if (userChoice===computerChoice){
         score.textContent='its a draw';
+        console.log(score.textContent);
         }
         else if(userChoice ==='rock'){
             if(computerChoice ==='paper' || computerChoice ==='spock' ){
-                score.textContent='Computer Won';
+                score.textContent+= 'Computer Won';
                 computerScore++;
             }else {
-                score.textContent='User Won';
+                score.textContent='User Won' + score.textContent;
                 userScore++;
             }
         }
@@ -51,6 +53,7 @@ console.log(userChoiceDisplay);
             if (computerChoice ==='scissors' || computerChoice ==='lizard'){
                 score.textContent='Computer Won';
                 computerScore++;
+                console.log(score.textContent);
             }else{
                 score.textContent='User Won';
                 userScore++;
@@ -85,14 +88,14 @@ console.log(userChoiceDisplay);
                 }
             }
         
-            document.getElementById("score").innerHTML= userScore + "  "  + computerChoice;
+            document.getElementById('score').innerHTML= userScore + "  "  + computerChoice;
 
 }
         
         
         localStorage.getItem('userScore', userScore);
         localStorage.setItem('computerScore', computerScore);
-        localStorage.setItem('score.textContent');
+        
         
         updateScore();
 
