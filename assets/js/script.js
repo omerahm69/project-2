@@ -1,109 +1,110 @@
+
 const rock=document.getElementById('rock');
 const paper=document.getElementById('paper');
 const scissors=document.getElementById('scissors');
 const lizard=document.getElementById('lizard');
 const spock=document.getElementById('spock');
 
-
 const userChoices = document.querySelectorAll('button');
 const userChoiceDisplay = document.getElementById('user-Choices');
 const computerChoiceDisplay = document.getElementById('computer-Choices');
 
-var score="" ;
+const scoreBoard = document.getElementById("score");
+const gameScore = document.getElementById("gameScore");
+const maxGames=9;
 
-let userScore = parseInt(localStorage.getItem('userScore')) || 0;
-let computerScore = parseInt(localStorage.getItem('computerScore')) || 0;
+let score="" ;
+let playerScore = parseInt(localStorage.getItem('userScore')) || 0;
+let cpuScore = parseInt(localStorage.getItem('computerScore')) || 0;
+let gamesPlayed=0;
 
-console.log(userScore);
 
 const computerChoices=['rock','paper','scissors','lizard','spock'];
 
 for (let button of userChoices) {
     button.addEventListener('click', function() {
+        if (gamesPlayed < maxGames){
         const userChoice = this.getAttribute('aria-label');
         userChoiceDisplay.textContent = "User: " + userChoice;
         playGame(userChoice);
+        } else{
+            endGame();
+        }
     });
-    
 }
-
 function playGame( userChoice){
+    gamesPlayed++;
+
     const random=Math.floor(Math.random() * computerChoices.length);
     const computerChoice= computerChoices[random];
 
     computerChoiceDisplay.textContent = "Computer: " + computerChoice;
 
-
-console.log(userChoiceDisplay);
-
     if (userChoice===computerChoice){
-        score.textContent='its a draw';
-        console.log(score.textContent);
+        score ='its a draw';
+        console.log(score);
         }
         else if(userChoice ==='rock'){
             if(computerChoice ==='paper' || computerChoice ==='spock' ){
-                score.textContent+= 'Computer Won';
-                computerScore++;
+                score = 'Computer Won';
+                cpuScore ++;
             }else {
-                score.textContent='User Won' + score.textContent;
-                userScore++;
+                score ='User Won';
+                playerScore++;
             }
         }
         else if(userChoices ==='paper'){
             if (computerChoice ==='scissors' || computerChoice ==='lizard'){
-                score.textContent='Computer Won';
-                computerScore++;
-                console.log(score.textContent);
+                score = 'Computer Won';
+                cpuScore++;
+                
             }else{
-                score.textContent='User Won';
-                userScore++;
+                score='User Won';
+                playerScore++;
             }
         }
         else if(userChoices ==='scissors'){
             if (computerChoice ==='rock' || computerChoice ==='spock'){
-                score.textContent='Computer Won';
-                computerScore++;
+                score ='Computer Won';
+                cpuScore++;
             }else{
-                score.textContent='User Won';
-                userScore++;
+                score ='User Won';
+                playerScore++;
             }
         }
         else if(userChoice ==='lizard'){
             if (computerChoice ==='rock' || computerChoice ==='scissors'){
-        score.textContent='Computer Won';
-        computerScore++;
+        score='Computer Won';
+        cpuScore++;
             }else{
-                score.textContent='User Won';
-                userScore++;
-                }
+                score='User Won';
+                playerScore++;
+            }
         }
         else if(userChoice ==='spock'){
             if (computerChoice ==='paper' || computerChoice ==='lizard'){
-        score.textContent='Computer Won';
-        computerScore++;
-
+        score='Computer Won';
+        cpuScore++;
             }else{
-                score.textContent='User Won';
-                userScore++;
+                score='User Won';
+                playerScore ++;
                 }
             }
-        
-            document.getElementById('score').innerHTML= userScore + "  "  + computerChoice;
-
+            scoreBoard.innerText=score;
+            updateScore();
+            if(gamesPlayed >= maxGames){
+                endGame();
+            }
 }
-        
-        
-        localStorage.getItem('userScore', userScore);
-        localStorage.setItem('computerScore', computerScore);
-        
-        
-        updateScore();
-
         function updateScore() {
-            score.textContent=`User: ${userScore} - Computer: ${computerScore}`;
-
-        
+        gameScore.textContent=`User: ${playerScore} - Computer: ${cpuScore}`;
+        localStorage.getItem('userScore', userScore);
+        localStorage.setItem('computerScore', computerScore)
 }
-
-
-                
+        function endGame(){
+            for (let button of userChoices){
+                button.disabled=true;
+            }
+            scoreBoard.innerText=('Game over!  Thanks for playing.');
+        }
+            updateScore();
