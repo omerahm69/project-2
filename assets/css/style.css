@@ -37,12 +37,34 @@ body{
 
 
 }
-
-@media only screen and {(min-width: 600px);
-    body {
-        color:blueviolet;
-    }
     
+@media only screen and (min-width: 600px) {
+    .main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .headings {
+        flex-direction: row;
+        margin: 0 20px;
+    }
+
+    .rpsls-main button {
+        min-width: 100px;
+        font-size: larger;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #score {
+        font-size: x-large;
+    }
+
+    .rpsls-main button {
+        min-width: 120px;
+        font-size: x-large;
+    }
 }
 
 

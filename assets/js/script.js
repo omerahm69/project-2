@@ -1,9 +1,5 @@
 
-const rock=document.getElementById('rock');
-const paper=document.getElementById('paper');
-const scissors=document.getElementById('scissors');
-const lizard=document.getElementById('lizard');
-const spock=document.getElementById('spock');
+"use strict";
 
 const userChoices = document.querySelectorAll('button');
 const userChoiceDisplay = document.getElementById('user-Choices');
@@ -21,7 +17,7 @@ let gamesPlayed=0;
 
 const computerChoices=['rock','paper','scissors','lizard','spock'];
 
-for (let button of userChoices) {
+userChoices.forEach((button) => {
     button.addEventListener('click', function() {
         if (gamesPlayed < maxGames){
         const userChoice = this.getAttribute('aria-label');
@@ -31,7 +27,7 @@ for (let button of userChoices) {
             endGame();
         }
     });
-}
+});
 function playGame( userChoice){
     gamesPlayed++;
 
@@ -98,8 +94,8 @@ function playGame( userChoice){
 }
         function updateScore() {
         gameScore.textContent=`User: ${playerScore} - Computer: ${cpuScore}`;
-        localStorage.getItem('userScore', userScore);
-        localStorage.setItem('computerScore', computerScore)
+        localStorage.getItem('playerScore', playerScore);
+        localStorage.setItem('cpuScore', cpuScore);
 }
         function endGame(){
             for (let button of userChoices){
