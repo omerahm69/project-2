@@ -14,7 +14,7 @@ body{
     display:flex;
     flex-direction:row;
     padding:2rem 2rem;
-    margin:1 rem;
+    margin:1rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
