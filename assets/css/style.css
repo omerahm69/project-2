@@ -14,7 +14,7 @@ body{
     display:flex;
     flex-direction:row;
     padding:2rem 2rem;
-    margin:1rem;
+    margin:5rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -31,9 +31,9 @@ body{
     font-weight: bold;
     margin-bottom: 10px;
 }
-.rpsls-main button {
+.rpsls-main {
     min-width: 80px;
-    margin:0 10px;
+    margin:0px 10px 5px 5px;
     background-color: rgb(206, 213, 213);
     cursor: pointer;
     font-size: large;
