@@ -50,7 +50,7 @@ body{
         font-size: large;
         margin: 0 20px;
     }
-    .rpsls-main button {
+    .rpsls-main  {
         min-width: 100px;
         font-size: larger;
     }
@@ -59,7 +59,7 @@ body{
     #score {
         font-size: x-large;
     }
-    .rpsls-main button {
+    .rpsls-main {
         min-width: 100px;
         font-size: x-large;
     }
