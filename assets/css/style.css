@@ -16,11 +16,11 @@ body{
     padding:2rem 2rem;
     margin:1 rem;
     margin-bottom: 10px;
-    text-align: center;
+    font-weight: bold;
 }
 #user-Choices, #computer-Choices{
     display:inline-block;
-    border: solid rebeccapurple;
+    border: solid rgb(176, 174, 179);
     padding:2rem 4rem;
     vertical-align: middle;
     margin-left: 50px;
@@ -34,7 +34,7 @@ body{
 .rpsls-main button {
     min-width: 80px;
     margin:0 10px;
-    background-color: rgb(150, 188, 188);
+    background-color: rgb(206, 213, 213);
     cursor: pointer;
     font-size: large;
     margin-top: 15px;

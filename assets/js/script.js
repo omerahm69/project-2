@@ -84,7 +84,9 @@ function playGame( userChoice){
             }else{
                 score='User Won';
                 playerScore ++;
-                }
+            }
+              //  console.log('Invalid user choice.');//
+                
             }
             scoreBoard.innerText=score;
             updateScore();
