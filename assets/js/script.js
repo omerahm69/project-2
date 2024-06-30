@@ -14,7 +14,6 @@ let playerScore = parseInt(localStorage.getItem('userScore')) || 0;
 let cpuScore = parseInt(localStorage.getItem('computerScore')) || 0;
 let gamesPlayed=0;
 
-
 const computerChoices=['rock','paper','scissors','lizard','spock'];
 
 userChoices.forEach((button) => {
@@ -49,7 +48,7 @@ function playGame( userChoice){
                 playerScore++;
             }
         }
-        else if(userChoices ==='paper'){
+        else if(userChoice ==='paper'){
             if (computerChoice ==='scissors' || computerChoice ==='lizard'){
                 score = 'Computer Won';
                 cpuScore++;
@@ -59,7 +58,7 @@ function playGame( userChoice){
                 playerScore++;
             }
         }
-        else if(userChoices ==='scissors'){
+        else if(userChoice ==='scissors'){
             if (computerChoice ==='rock' || computerChoice ==='spock'){
                 score ='Computer Won';
                 cpuScore++;
@@ -70,8 +69,8 @@ function playGame( userChoice){
         }
         else if(userChoice ==='lizard'){
             if (computerChoice ==='rock' || computerChoice ==='scissors'){
-        score='Computer Won';
-        cpuScore++;
+                score='Computer Won';
+                cpuScore++;
             }else{
                 score='User Won';
                 playerScore++;
@@ -79,14 +78,12 @@ function playGame( userChoice){
         }
         else if(userChoice ==='spock'){
             if (computerChoice ==='paper' || computerChoice ==='lizard'){
-        score='Computer Won';
-        cpuScore++;
+                score='Computer Won';
+                cpuScore++;
             }else{
                 score='User Won';
                 playerScore ++;
             }
-              //  console.log('Invalid user choice.');//
-                
             }
             scoreBoard.innerText=score;
             updateScore();
