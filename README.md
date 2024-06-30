@@ -14,6 +14,8 @@ The main feature of the project is:
     2. A score tracking system
     3. A limited number of tries before the game is over
     4. Pattern matching functionality
+
+    
   
 ![Skärmbild webapplication-2024-06-30 172305](https://github.com/omerahm69/project-2/assets/153000625/d8430b01-2461-4755-88c5-27d2cc271bef)
 
