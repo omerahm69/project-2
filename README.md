@@ -9,7 +9,7 @@ The user's goal is to play an online game that has elements of chance. The site 
 As a user when I see the score, this will let me try several times to win a gainst the computer and so I will push different buttons in several tries hopping to win.
 
 Features:
-The main feature of the project is expected to be:
+The main feature of the project is:
     1.The ability to play against the computer
     2. A score tracking system
     3. A limited number of tries before the game is over
