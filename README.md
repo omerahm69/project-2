@@ -1,4 +1,4 @@
-# project2
+# project-2
 This is my second Project in the Fullstack Developer program at Code Institute. The project is about building an interactive Front-End web application using HTML, CSS and Javascript. The title of the game is:
 Rock, Paper, Scissors, Lizard, Spock Game
 
