@@ -47,7 +47,7 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fomerahm69.github
 JavaScript:
 
 
-![Skärmbild utvärdering JS 2024-06-27-232015](https://github.com/omerahm69/project-2/assets/153000625/0f8029a7-64e7-4faf-838c-dc99752eeb9e)
+![Skärmbild-JSvalidation-2024-06-30 224403](https://github.com/omerahm69/project-2/assets/153000625/b3a75eb1-de2f-474a-acc2-efc09f62dba1)
 
 
 Accessibility Testing
@@ -60,9 +60,12 @@ To check the colors and fonts I used Lighthouse in the Google devtools. The resu
 Manual Testing:
 I have tested that the project is responsive with different device sizes.it looks good and functions as normal.
 
+![Fullscreen](https://github.com/omerahm69/project-2/assets/153000625/500a9746-e9a8-40be-b422-cbb9d5180eb7)
+
+![Mobile-device](https://github.com/omerahm69/project-2/assets/153000625/5f26025b-120d-43af-9932-c63a7b95dff8)
 
 Unfixed Bugs:
-After playing a limited number of tries and the game ends, the user should have the ability to restart the game to try another time. This  should be fixed in the near future. 
+After playing a limited number of tries and the game ends, the user should have the ability to restart the game to try another time. This should be fixed in the near future. 
 
 Deployment and Forking:
 Fork 
