@@ -6,7 +6,14 @@ The goal of the project is to provide a challenging game with increasing levels 
 
 The user's goal is to play an online game that has elements of chance. The site would respond to the user'selection and and encourage him/her to play, showing the score of both user and computer.
 
-As a user when I see the score, this will let me try several times to win a gainst the computer and so I will push different buttons in several tries hopping to win.
+Uaer stories:
+
+1. As a user, I need an explanation of how to start the game, even if it's simple, the application requests the user to click on one of the buttons to start playing the game.
+
+2. When the user selects an option, the scores of the user and the computer will be shown. 
+
+3. As a user, when I see the score, this will let me try several times to win against the computer, and so I will push different buttons in several tries hopping to win.
+
 
 Features:
 
