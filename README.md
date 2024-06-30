@@ -4,7 +4,9 @@ Rock, Paper, Scissors, Lizard, Spock Game
 
 The goal of the project is to provide a challenging game with increasing levels of difficulty to entertain online users.
 
-The user's goal is to play an online game that has elements of chance. The site would respons to the user'saction and and encorage him/her to play showing the score of both user and computer. As a user when I see the score this will let me try several time to win a gainst the computer and so I will push different button in several tries hopping to win.
+The user's goal is to play an online game that has elements of chance. The site would respond to the user'selection and and encourage him/her to play, showing the score of both user and computer.
+
+As a user when I see the score, this will let me try several times to win a gainst the computer and so I will push different buttons in several tries hopping to win.
 
 Features:
 The main feature of the project is expected to be:
@@ -16,7 +18,7 @@ The main feature of the project is expected to be:
 ![Skärmbild webapplication-2024-06-30 172305](https://github.com/omerahm69/project-2/assets/153000625/d8430b01-2461-4755-88c5-27d2cc271bef)
 
 
-Wireframe below shows the design I have chosen for the game. The site has only one page that consits of a title, Rock Paper Scissors Lizards and Spock. A game area for the user and the computer. A score area and a control area with five buttons as mentioned on the title.
+Wireframe below shows the design I have chosen for the game. The web application consits of a title: Rock Paper Scissors Lizards and Spock. A game area for the user and the computer. A score area and a control area with five buttons as mentioned on the title.
 
 
 ![Wireframe 2](https://github.com/omerahm69/project-2/assets/153000625/3d2d49c8-9b0a-469f-aba9-8766608d33da)
@@ -42,11 +44,11 @@ To check the colors and fonts I used Lighthouse in the Google devtools. The resu
 
 
 Manual Testing:
-I have tested that the project is reponsive with different device sizes.it looks good and functions as normal.
+I have tested that the project is responsive with different device sizes.it looks good and functions as normal.
 
 
 Unfixed Bugs:
-After playing a limited number of tries and the game ends, the user should have the ability to restart the game to try another time. This  should be fixed n the near future. 
+After playing a limited number of tries and the game ends, the user should have the ability to restart the game to try another time. This  should be fixed in the near future. 
 
 Deployment and Forking:
 Fork 
@@ -84,3 +86,4 @@ HTML,CSS and Javascript code help was teken from w3schools https://www.w3schools
 
 Media
 Images are from 
+https://www.google.com/search?q=rock+paper+scissors+free+images&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMg8IBxAuGCcYxwEY6gIY0QPSAQkyMzM1ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8
