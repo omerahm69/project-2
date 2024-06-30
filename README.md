@@ -12,8 +12,8 @@ The main feature of the project is expected to be:
     2. A score tracking system
     3. A limited number of tries before the game is over
     4. Pattern matching functionality
-    
-![Skärmbild websida 2024-06-28 224037](https://github.com/omerahm69/project-2/assets/153000625/04da43d3-a126-4104-97db-057768a51156)
+  
+![Skärmbild webapplication-2024-06-30 172305](https://github.com/omerahm69/project-2/assets/153000625/d8430b01-2461-4755-88c5-27d2cc271bef)
 
 
 Wireframe below shows the design I have chosen for the game. The site has only one page that consits of a title, Rock Paper Scissors Lizards and Spock. A game area for the user and the computer. A score area and a control area with five buttons as mentioned on the title.
