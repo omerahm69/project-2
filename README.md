@@ -37,7 +37,8 @@ JavaScript:
 Accessibility Testing
 To check the colors and fonts I used Lighthouse in the Google devtools. The result are shown below:
 
-![Skärmbild 2024-06-26 210544](https://github.com/omerahm69/project-2/assets/153000625/ac50f393-23d6-4405-987d-505541a265f3)
+
+![Skärmbild accesibility-2024-06-30 172112](https://github.com/omerahm69/project-2/assets/153000625/18b051ee-69c3-4f59-9667-8797d1edc94f)
 
 
 Manual Testing:
