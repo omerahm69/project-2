@@ -9,6 +9,7 @@ The user's goal is to play an online game that has elements of chance. The site 
 As a user when I see the score, this will let me try several times to win a gainst the computer and so I will push different buttons in several tries hopping to win.
 
 Features:
+
 The main feature of the project is:
     1.The ability to play against the computer
     2. A score tracking system
@@ -37,6 +38,10 @@ CSS:
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fomerahm69.github.io%2Fproject-2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv
 
 JavaScript:
+
+
+![Skärmbild utvärdering JS 2024-06-27-232015](https://github.com/omerahm69/project-2/assets/153000625/0f8029a7-64e7-4faf-838c-dc99752eeb9e)
+
 
 Accessibility Testing
 To check the colors and fonts I used Lighthouse in the Google devtools. The result are shown below:
