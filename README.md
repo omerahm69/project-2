@@ -19,6 +19,7 @@ Wireframe below shows the design I have chosen for the game. The site has only o
 
 Testing: 
 Validator testing: 
+
 HTML:
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fomerahm69.github.io%2Fproject-2%2F
 
