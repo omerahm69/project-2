@@ -68,7 +68,7 @@ Remote Deployment
 Credits:
 Content:
 Process from the Code Institute Love Math was used to help create this webapplication.
-HTML,CSS and Javascript code help was teken from w3schools-https://github.com/dlhamilton/LPSB-Learn-GCSE-CS/blob/main/README.md#:~:text=taken%20from%20w3schools%20%2D-,W3Schools,-Media
+HTML,CSS and Javascript code help was teken from w3schools
 
 Media
 Images are from 
