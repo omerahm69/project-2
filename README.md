@@ -12,10 +12,14 @@ The main feature of the project is expected to be:
     2. A score tracking system
     3. A limited number of tries before the game is over
     4. Pattern matching functionality
+    
+![Skärmbild websida 2024-06-28 224037](https://github.com/omerahm69/project-2/assets/153000625/04da43d3-a126-4104-97db-057768a51156)
+
 
 Wireframe below shows the design I have chosen for the game. The site has only one page that consits of a title, Rock Paper Scissors Lizards and Spock. A game area for the user and the computer. A score area and a control area with five buttons as mentioned on the title.
 
-![Skärmbild websida 2024-06-28 224037](https://github.com/omerahm69/project-2/assets/153000625/04da43d3-a126-4104-97db-057768a51156)
+
+![Wireframe 2](https://github.com/omerahm69/project-2/assets/153000625/3d2d49c8-9b0a-469f-aba9-8766608d33da)
 
 Testing: 
 Validator testing: 
@@ -32,6 +36,8 @@ JavaScript:
 
 Accessibility Testing
 To check the colors and fonts I used Lighthouse in the Google devtools. The result are shown below:
+
+![Skärmbild 2024-06-26 210544](https://github.com/omerahm69/project-2/assets/153000625/ac50f393-23d6-4405-987d-505541a265f3)
 
 
 Manual Testing:
