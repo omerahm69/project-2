@@ -24,6 +24,7 @@ HTML:
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fomerahm69.github.io%2Fproject-2%2F
 
 CSS:
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fomerahm69.github.io%2Fproject-2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv
 
 JavaScript:
 
