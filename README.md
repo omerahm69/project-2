@@ -31,7 +31,8 @@ The main feature of the project is:
 Wireframe below shows the design I have chosen for the game. The web application consits of a title: Rock Paper Scissors Lizards and Spock. A game area for the user and the computer. A score area and a control area with five buttons as mentioned on the title.
 
 
-![Wireframe 2](https://github.com/omerahm69/project-2/assets/153000625/3d2d49c8-9b0a-469f-aba9-8766608d33da)
+![Wireframe-2](https://github.com/omerahm69/project-2/assets/153000625/08e43118-36c8-4d9f-af9c-b9272b9c62f2)
+
 
 Testing: 
 Validator testing: 
