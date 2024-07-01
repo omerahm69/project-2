@@ -65,8 +65,10 @@ I have tested that the project is responsive with different device sizes.it look
 
 ![Mobile-device](https://github.com/omerahm69/project-2/assets/153000625/5f26025b-120d-43af-9932-c63a7b95dff8)
 
+
+
 Unfixed Bugs:
-After playing a limited number of tries and the game ends, the user should have the ability to restart the game to try another time. This should be fixed in the near future. 
+After playing a limited number of tries and the game ends, the user should have the ability to restart the game to try another time or there should be more than one round to play.This should be fixed in the near future. 
 
 Deployment and Forking:
 Fork 
